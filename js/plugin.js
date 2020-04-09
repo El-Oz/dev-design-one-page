@@ -35,7 +35,7 @@ $(document).on('ready', function () {
         menuItem.removeClass( 'active' );
         $(this).addClass( 'active' );
         $('html, body').animate({
-            scrollTop: Math.max($(e.target.hash).offset().top - 90, 1) + 'px'
+            scrollTop: Math.max($(e.target.hash).offset().top - 92, 1) + 'px'
         })
     });
 
