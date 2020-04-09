@@ -1680,7 +1680,7 @@ h6 {
   }
   @media (max-width: 767px) {
     .footer {
-      padding: 60px 0 20px;
+      padding: 160px 0 20px;
     }
     .footer .about {
       margin-bottom: 10px;
