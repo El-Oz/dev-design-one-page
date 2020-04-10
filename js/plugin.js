@@ -241,6 +241,7 @@ $(document).on('ready', function () {
 
     var portfolioFilters = $('#portfolio-filters'),
         portfolioButtons = portfolioFilters.find('.button'),
+        portfolioButtonsTop = portfolioButtons.offset().top,
         buttonBorder = portfolioFilters.find('.button-border');
     
     moveButtonTo(portfolioFilters.find('.active'));
@@ -257,7 +258,7 @@ $(document).on('ready', function () {
 
     function moveButtonTo( element ) {
         buttonBorder.css({
-            top: $( element ).position().top + 'px',
+            top: $( element ).offset().top - portfolioButtonsTop + 'px',
             left: $( element ).position().left + 'px',
             width: $( element ).outerWidth() + 'px',
             height: $( element ).outerHeight() + 'px'
