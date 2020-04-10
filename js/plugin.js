@@ -257,7 +257,7 @@ $(document).on('ready', function () {
 
     function moveButtonTo( element ) {
         buttonBorder.css({
-            top: $( element ).position().top - btnMargin + 'px',
+            top: $( element ).position().top + btnMargin + 'px',
             left: $( element ).position().left + 'px',
             width: $( element ).outerWidth() + 'px',
             height: $( element ).outerHeight() + 'px'
