@@ -243,7 +243,6 @@ $(document).on('ready', function () {
         portfolioButtons = portfolioFilters.find('.button'),
         btnMargin = +window.getComputedStyle(portfolioButtons[0])['margin-top'].slice(0, -2),
         buttonBorder = portfolioFilters.find('.button-border');
-    console.log(btnMargin);
     moveButtonTo(portfolioFilters.find('.active'));
 
     portfolioFilters.on( 'click', 'button', function() {
@@ -258,7 +257,7 @@ $(document).on('ready', function () {
 
     function moveButtonTo( element ) {
         buttonBorder.css({
-            top: $( element ).position().top -  + 'px',
+            top: $( element ).position().top - btnMargin + 'px',
             left: $( element ).position().left + 'px',
             width: $( element ).outerWidth() + 'px',
             height: $( element ).outerHeight() + 'px'
